@@ -45,6 +45,15 @@ header h1 {
   -webkit-text-stroke-color: #BAF3F3
 }
 
+header h1 a {
+  text-decoration: none;
+  text-shadow: 3px 3px 2px #F92929;
+  -webkit-text-fill-color: #FFCF6E;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #BAF3F3
+}
+
+
 .heading {
   text-align: center;
   background: -moz-linear-gradient(to bottom right, #57C9C9, #199696);
@@ -84,11 +93,11 @@ header h1 {
   text-decoration: none;
 }
 
-a:link, a:visited {
+.horizontal li a:link, .horizontal li a:visited {
   color: #F9B429;
 }
 
-a:hover, a:active {
+.horizontal li a:hover, .horizontal li a:active {
   color: #F92929;
   background-color: #FFCF6E;
 }
