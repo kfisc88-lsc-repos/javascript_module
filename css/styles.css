@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/*
+Author: Kelley Fischer
+Date: 11/16/19
+
+
+*/
+
+/* HTML Styles */
+
+html {
+  font-family: Candara, Verdana, sans-serif;
+}
+
+
+/* Header Styles */
+
+header {
+  background: linear-gradient(to top, #199696, #35AEAE);
+  min-height: 10vh;
+}
+
+header h1 {
+  font: small-caps 4em Impact, Arial, sans-serif;
+  text-shadow: 3px 3px 4px #F92929;
+  padding-left: 20px;
+  padding-top: 5px;
+  -webkit-text-fill-color: #FFCF6E;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #BAF3F3;
+}
+
+
+/* Navigation Styles */
+
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FF6E6E;
+}
+
+.horizontal li {
+  float: left;
+}
+
+.horizontal li a {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #F9B429;
+}
+
+a:hover, a:active {
+  color: #F92929;
+  background-color: #FFCF6E;
+}
+
+
+/* Body Element Styles */
+
+aside {
+  float: right;
+  width: 30%;
+}
+
+main {
+  float: left;
+  width: 60%;
+}
+
+footer {
+  background: #FFCF6E;
+  min-height: 50px;
+  clear: both;
+}
