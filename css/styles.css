@@ -7,17 +7,24 @@ Date: 11/16/19
 
 */
 
-/* HTML Styles */
+/* HTML & Body Styles */
 
 html {
   font-family: Candara, Verdana, sans-serif;
+  font-variant: small-caps;
 }
 
+body {
+  min-width: 640px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Header Styles */
 
 header {
-  background: linear-gradient(to top, #199696, #35AEAE);
+  background: linear-gradient(to bottom right, #57C9C9, #199696);
   min-height: 10vh;
 }
 
@@ -27,8 +34,8 @@ header h1 {
   padding-top: 5px;
 }
 
-h1, h2, h3, h4, h4{
-  text-shadow: 3px 3px 4px #F92929;
+h1, h2, h3, h4, h4 {
+  text-shadow: 3px 3px 2px #F92929;
   -webkit-text-fill-color: #FFCF6E;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #BAF3F3;
@@ -68,22 +75,42 @@ a:hover, a:active {
 }
 
 
-/* Body Element Styles */
+/* Main & Aside Styles */
 
 aside {
   float: right;
   width: 30%;
 }
 
-
 main {
   float: left;
   width: 60%;
+  background-color: #FFEBC3;
+  margin-top: 10px;
+}
+
+.form_heading {
+  text-align: center;
+  background: linear-gradient(to bottom right, #57C9C9, #199696);
+  margin-top: 0px;
+  padding: 10px;
 }
 
 
+/* Form Styles */
+
+div.orderForm {
+  margin: 7px 0px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+/* Footer Styles */
+
 footer {
-  clear: both;
+  clear: left;
   background: #FFCF6E;
   min-height: 50px;
 }
