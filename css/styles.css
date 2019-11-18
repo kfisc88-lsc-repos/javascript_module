@@ -7,11 +7,13 @@ Date: 11/16/19
 
 */
 
+
 /* HTML & Body Styles */
 
 html {
   font-family: Candara, Verdana, sans-serif;
   font-variant: small-caps;
+  background: linear-gradient(to bottom right, #FFC3C3, #F9B429);
 }
 
 body {
@@ -97,13 +99,64 @@ main {
 }
 
 
-/* Form Styles */
+/* Menu Form Styles */
 
 div.orderForm {
   margin: 7px 0px;
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+fieldset {
+  border: none;
+}
+
+.getFood {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.getFood > label {
+  border-top: 1px solid black;
+}
+
+
+/* Customer Info Form Styles */
+
+.custData {
+  margin: 7px 0px;
+  padding: 5px 15px;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+div.custData > * {
+  -webkit-flex: 1 1 150px;
+  flex: 1 1 150px;
+}
+
+
+/* Legend Styles */
+
+legend.custData {
+  background-color: #57C9C9;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 1.5em;
+  text-shadow: 3px 3px 2px #F92929;
+  -webkit-text-fill-color: #FFCF6E;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #BAF3F3;
 }
 
 

@@ -2,10 +2,10 @@
 <html>
 <head>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/styles.css">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/styles.css" />
 <!--
 JavaScript Module
 
@@ -38,38 +38,64 @@ Date  : 11/15/19
 
       <div class="orderForm">
         <label for="burger">Classic Rock Burger...........$8.99</label>
-        <input name="ordBurger" id="burger" type="checkbox">
+        <input name="orderBurger" id="burger" type="checkbox"/>
       </div>
 
       <div class="orderForm">
         <label for="dblburger">Double Rock Burger..........$11.99</label>
-        <input name="ordDouble" id="dblburger" type="checkbox">
+        <input name="orderDouble" id="dblburger" type="checkbox"/>
       </div>
 
       <div class="orderForm">
         <label for="chicken">Fried Chicken Sandwich.....$10.99</label>
-        <input name="ordChicken" id="chicken" type="checkbox">
+        <input name="orderChicken" id="chicken" type="checkbox"/>
       </div>
 
       <div class="orderForm">
         <label for="vegburger">Portobella Burger..............$8.99</label>
-        <input name="ordVeggie" id="vegburger" type="checkbox">
+        <input name="orderVeggie" id="vegburger" type="checkbox"/>
       </div>
 
       <div class="orderForm">
         <label for="fish">Smoked Fish Sandwich.......$11.99</label>
-        <input name="ordFish" id="fish" type="checkbox">
+        <input name="orderFish" id="fish" type="checkbox">
       </div>
 
-      <div class="">
-        <label for="delivery">Smoked Fish Sandwich.......$11.99</label>
-        <input name="ordFish" id="delivery" type="checkbox">
+      <div class="getFood">
+        <label>Will your order be Delivery or Carryout?</label>
+        <fieldset>
+          <label for="delivery">Delivery</label>
+          <input name="orderPref" id="delivery" value="delivery" type="radio" required />
+          <label for="carryout">Carryout</label>
+          <input name="orderPref" id="carryout" value="carryout" type="radio" required />
+        </fieldset>
       </div>
 
-      <div class="">
-        <label for="carryout">Smoked Fish Sandwich.......$11.99</label>
-        <input name="ordFish" id="carryout" type="checkbox">
+      <div>
+        <legend class="custData">Customer Information</legend>
+        <div class="custData">
+          <label for="name">Name</label>
+          <input name="custName" id="name" type="text" required />
+        </div>
+        <div class="custData">
+          <label for="street">Street Address</label>
+          <input name="custStreet" id="street" type="text" required />
+        </div>
+        <div class="custData">
+          <label for="city">City</label>
+          <input name="custCity" id="city" type="text" required />
+        </div>
+        <div class="custData">
+          <label for="state">State</label>
+          <input name="custState" id="state" type="text" required />
+        </div>
+        <div class="custData">
+          <label for="zip">Zip</label>
+          <input name="custZip" id="zip" type="text" required />
+        </div>
       </div>
+
+
 
     </form>
 
