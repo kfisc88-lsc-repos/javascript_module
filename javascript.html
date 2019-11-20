@@ -15,95 +15,111 @@ Date  : 11/15/19
 -->
 <title>JavaScript</title>
 <link href="css/styles.css" rel="stylesheet" />
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js" defer></script>
 
 </head>
 <body>
 
-  <header><h1><a href="index.html">Double Rock and Roll</a></h1></header>
+    <header><h1><a href="index.html">Double Rock and Roll</a></h1></header>
 
-  <nav>
-    <ul class="horizontal">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="javascript.html">JavaScript</a></li>
-      <li><a href="">jQuery</a></li>
-      <li><a href="">PHP</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul class="horizontal">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+            <li><a href="">jQuery</a></li>
+            <li><a href="">PHP</a></li>
+        </ul>
+    </nav>
 
-  <main>
-    <!-- Add action for form -->
-    <form action="" method="post">
-      <h1 class="heading">Menu</h1>
+    <main>
+        <!-- Add action for form -->
+        <form action="" method="post">
+            <h2 class="heading">Menu</h2>
+            <fieldset id="menu">
+                <div class="order">
+                    <label for="burger">Classic Rock Burger...........$8.99</label>
+                    <input name="burger" id="burger" type="checkbox" value="8.99"/>
+                </div>
+                <div class="order">
+                    <label for="dblburger">Double Rock Burger..........$11.99</label>
+                    <input name="dblburger" id="dblburger" type="checkbox" value="11.99"/>
+                </div>
+                <div class="order">
+                    <label for="chicken">Fried Chicken Sandwich.....$10.99</label>
+                    <input name="chicken" id="chicken" type="checkbox" value="10.99"/>
+                </div>
+                <div class="order">
+                    <label for="vegburger">Portobella Burger..............$8.99</label>
+                    <input name="veggie" id="vegburger" type="checkbox" value="8.99"/>
+                </div>
+                <div class="order">
+                    <label for="fish">Smoked Fish Sandwich.......$11.99</label>
+                    <input name="fish" id="fish" type="checkbox" value="11.99" />
+                </div>
+            </fieldset>
 
-      <div class="orderForm">
-        <label for="burger">Classic Rock Burger...........$8.99</label>
-        <input name="orderBurger" id="burger" type="checkbox" value="8.99"/>
-      </div>
 
-      <div class="orderForm">
-        <label for="dblburger">Double Rock Burger..........$11.99</label>
-        <input name="orderDouble" id="dblburger" type="checkbox" value="11.99"/>
-      </div>
+            <fieldset class="getFood">
+                <legend>Will your order be Delivery or Carryout?</legend>
+                <label for="delivery">Delivery</label>
+                <input name="orderPref" id="delivery" value="delivery" type="radio"  required />
+                <label for="carryout">Carryout</label>
+                <input name="orderPref" id="carryout" value="carryout" type="radio" required />
+            </fieldset>
 
-      <div class="orderForm">
-        <label for="chicken">Fried Chicken Sandwich.....$10.99</label>
-        <input name="orderChicken" id="chicken" type="checkbox" value="10.99"/>
-      </div>
 
-      <div class="orderForm">
-        <label for="vegburger">Portobella Burger..............$8.99</label>
-        <input name="orderVeggie" id="vegburger" type="checkbox" value="8.99"/>
-      </div>
+            <fieldset>
+                <legend class="custData heading">Customer Information</legend>
+                <div class="custData">
+                    <label for="name">Name</label>
+                    <input name="custName" id="name" type="text" required />
+                </div>
+                <div class="custData">
+                    <label for="street">Street Address</label>
+                    <input name="custStreet" id="street" type="text" required />
+                </div>
+                <div class="custData">
+                    <label for="city">City</label>
+                    <input name="custCity" id="city" type="text" required />
+                </div>
+                <div class="custData">
+                    <label for="state">State</label>
+                    <input name="custState" id="state" type="text" required />
+                </div>
+                <div class="custData">
+                    <label for="zip">Zip</label>
+                    <input name="custZip" id="zip" type="text" required />
+                </div>
+            </fieldset>
 
-      <div class="orderForm">
-        <label for="fish">Smoked Fish Sandwich.......$11.99</label>
-        <input name="orderFish" id="fish" type="checkbox" value="11.99" />
-      </div>
-
-      <div class="getFood">
-        <label>Will your order be Delivery or Carryout?</label>
-        <fieldset>
-          <label for="delivery">Delivery</label>
-          <input name="orderPref" id="delivery" value="delivery" type="radio" required />
-          <label for="carryout">Carryout</label>
-          <input name="orderPref" id="carryout" value="carryout" type="radio" required />
-        </fieldset>
-      </div>
-
-      <div>
-        <legend class="custData heading">Customer Information</legend>
-        <div class="custData">
-          <label for="name">Name</label>
-          <input name="custName" id="name" type="text" required />
-        </div>
-        <div class="custData">
-          <label for="street">Street Address</label>
-          <input name="custStreet" id="street" type="text" required />
-        </div>
-        <div class="custData">
-          <label for="city">City</label>
-          <input name="custCity" id="city" type="text" required />
-        </div>
-        <div class="custData">
-          <label for="state">State</label>
-          <input name="custState" id="state" type="text" required />
-        </div>
-        <div class="custData">
-          <label for="zip">Zip</label>
-          <input name="custZip" id="zip" type="text" required />
-        </div>
-      </div>
-
-      <div id="button">
-        <input type="submit" onclick="processOrder()" />
-      </div>
-
-    </form>
-
-  </main>
+            <input type="button" class="button" value="Submit" onclick="processOrder()" />
+            <h3 id="total">Your total is: $0.00</h3>
+        </form>
+    </main>
 
   <aside>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Item</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tfoot id="tablefoot">
+            <tr>
+                <td colspan="3">
+                    <input type="button" class="button" name="order" value="Place Order">
+                </td>
+            </tr>
+        </tfoot>
+        <tbody id="tablebody">
+        </tbody>
+    </table>
+    <form method="post">
+        <input type="number" placeholder="0" />
+        <input type="button" onclick="genRows" value="Add Rows"/>
+    </form>
   </aside>
 
   <footer>
