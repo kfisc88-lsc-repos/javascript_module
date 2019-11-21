@@ -194,7 +194,11 @@ div.custData > * {
 
 .button {
     margin: 1vh auto 1vh auto;
-    padding: 2px;
+    padding: 5px;
+}
+
+#submit_button {
+    margin-left: 20px;
 }
 
 #total {
@@ -202,6 +206,8 @@ div.custData > * {
     margin: 3vh 20% 3vh auto;
     font-size: 1.3em;
 }
+
+
 
 /* Table Styles */
 
