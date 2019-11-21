@@ -11,111 +11,120 @@ Date: 11/16/19
 /* HTML & Body Styles */
 
 html {
-  font-family: Candara, Verdana, sans-serif;
-  font-variant: small-caps;
-  background: -moz-linear-gradient(to bottom right, #FFC3C3, #F9B429);
-  background: -webkit-linear-gradient(to bottom right, #FFC3C3, #F9B429);
-  background: linear-gradient(to bottom right, #FFC3C3, #F9B429);
+    font-family: Candara, Verdana, sans-serif;
+    font-variant: small-caps;
+
+    background: -moz-linear-gradient(to bottom right, #FFC3C3, #F9B429);
+    background: -webkit-linear-gradient(to bottom right, #FFC3C3, #F9B429);
+    background: linear-gradient(to bottom right, #FFC3C3, #F9B429);
 }
 
 body {
-  min-width: 640px;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+    min-width: 640px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Header/Heading Styles */
 
 header {
-  background: -moz-linear-gradient(to bottom right, #57C9C9, #199696);
-  background: -webkit-linear-gradient(to bottom right, #57C9C9, #199696);
-  background: linear-gradient(to bottom right, #57C9C9, #199696);
-  min-height: 10vh;
+    background: -moz-linear-gradient(to bottom right, #57C9C9, #199696);
+    background: -webkit-linear-gradient(to bottom right, #57C9C9, #199696);
+    background: linear-gradient(to bottom right, #57C9C9, #199696);
+    min-height: 10vh;
 }
 
 header h1 {
-  font: small-caps 4em Impact, Arial, sans-serif;
-  padding-left: 20px;
-  padding-top: 5px;
+    font: small-caps 4em Impact, Arial, sans-serif;
+    padding-left: 20px;
+    padding-top: 5px;
 
-  text-shadow: 3px 3px 2px #F92929;
-  -webkit-text-fill-color: #FFCF6E;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #BAF3F3
+    text-shadow: 3px 3px 2px #F92929;
+    -webkit-text-fill-color: #FFCF6E;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #BAF3F3
 }
 
 header h1 a {
-  text-decoration: none;
-  text-shadow: 3px 3px 2px #F92929;
-  -webkit-text-fill-color: #FFCF6E;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #BAF3F3
+    text-decoration: none;
+    text-shadow: 3px 3px 2px #F92929;
+    -webkit-text-fill-color: #FFCF6E;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #BAF3F3
 }
 
 
 .heading, .button {
-  text-align: center;
-  background: -moz-linear-gradient(to bottom right, #57C9C9, #199696);
-  background: -webkit-linear-gradient(to bottom right, #57C9C9, #199696);
-  background: linear-gradient(to bottom right, #57C9C9, #199696);
-  margin-top: 0px;
-  padding: 10px;
+    text-align: center;
+    background: -moz-linear-gradient(to bottom right, #57C9C9, #199696);
+    background: -webkit-linear-gradient(to bottom right, #57C9C9, #199696);
+    background: linear-gradient(to bottom right, #57C9C9, #199696);
+    margin-top: 0px;
+    padding: 10px;
 
-  font-size: 1.5em;
-  text-shadow: 3px 3px 2px #F92929;
-  -webkit-text-fill-color: #FFCF6E;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #BAF3F3
+    font-size: 1.5em;
+    text-shadow: 3px 3px 2px #F92929;
+    -webkit-text-fill-color: #FFCF6E;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #BAF3F3
 }
 
 
 /* Navigation Styles */
 
 .horizontal {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FF6E6E;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FF6E6E;
 }
 
 .horizontal li {
-  float: left;
+    float: left;
 }
 
 .horizontal li a {
-  display: block;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-  padding: 8px 20px;
-  text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
 }
 
 .horizontal li a:link, .horizontal li a:visited {
-  color: #F9B429;
+    color: #F9B429;
 }
 
 .horizontal li a:hover, .horizontal li a:active {
-  color: #F92929;
-  background-color: #FFCF6E;
+    color: #F92929;
+    background-color: #FFCF6E;
 }
 
 
 /* Main & Aside Styles */
 
 aside {
-  float: right;
-  width: 30%;
+    display: block;
+    float: right;
+    width: 40%;
+    background-color: #FFEBC3;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding: 10px;
+    display: table;
 }
 
 main {
-  float: left;
-  width: 60%;
-  background-color: #FFEBC3;
-  margin-top: 10px;
+    display: block;
+    float: left;
+    width: 55%;
+    background-color: #FFEBC3;
+    margin-top: 10px;
 }
+
 
 /* Menu Form Styles */
 
@@ -127,63 +136,76 @@ div.order {
 }
 
 fieldset {
-  border: none;
-  padding: 0px;
+    border: none;
+    padding: 0px;
+}
+
+fieldset#deliveryAddr {
+    display: none;
+}
+
+legend.custData {
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .getFood {
-  text-align: center;
-  font-size: 1.2em;
-  margin-top: 10px;
-  margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 
 /* Customer Info Form Styles */
 
 .custData {
-  margin: 7px 0px;
-  padding: 5px 15px;
-  text-align: left;
-  font-size: 1.2em;
-  font-weight: bold;
+    margin: 7px 0px;
+    padding: 5px 15px;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
 
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 
 div.custData > * {
-  -webkit-flex: 1 1 150px;
-  flex: 1 1 150px;
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;
 }
 
 .button {
-    float: left;
-    margin-left: 20%;
-    margin-top: 3vh;
-    margin-bottom: 1vh;
+    margin: 1vh auto 1vh auto;
+    padding: 2px;
 }
 
 #total {
-    float: left;
-    margin-left: 20%;
-    margin-top: 3vh;
-    margin-bottom: 1vh;
+    float: right;
+    margin: 3vh 20% 3vh auto;
     font-size: 1.3em;
 }
+
+/* Table Styles */
+
+#order_table {
+    display: none;
+}
+
 
 /* Footer Styles */
 
 footer {
-  clear: left;
-  background: #FFCF6E;
-  min-height: 50px;
+    clear: left;
+    background: #FFCF6E;
+    min-height: 50px;
 }
 
 footer::after{
-  clear: both;
-  content: "";
-  display: table;
+    clear: both;
+    content: "";
+    display: table;
 }

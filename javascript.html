@@ -32,8 +32,8 @@ Date  : 11/15/19
     </nav>
 
     <main>
-        <!-- Add action for form -->
-        <form action="" method="post">
+        <form method="post">
+
             <h2 class="heading">Menu</h2>
             <fieldset id="menu">
                 <div class="order">
@@ -62,13 +62,13 @@ Date  : 11/15/19
             <fieldset class="getFood">
                 <legend>Will your order be Delivery or Carryout?</legend>
                 <label for="delivery">Delivery</label>
-                <input name="orderPref" id="delivery" value="delivery" type="radio"  required />
+                <input name="orderPref" id="delivery" value="delivery" type="radio" onclick="getCustInfo()" required />
                 <label for="carryout">Carryout</label>
-                <input name="orderPref" id="carryout" value="carryout" type="radio" required />
+                <input name="orderPref" id="carryout" value="carryout" type="radio" onclick="hideCustInfo()" required />
             </fieldset>
 
 
-            <fieldset>
+            <fieldset id="deliveryAddr">
                 <legend class="custData heading">Customer Information</legend>
                 <div class="custData">
                     <label for="name">Name</label>
@@ -92,13 +92,13 @@ Date  : 11/15/19
                 </div>
             </fieldset>
 
-            <input type="button" class="button" value="Submit" onclick="processOrder()" />
+            <input type="button" class="button" id="submit_button" value="Submit" onclick="processOrder()" />
             <h3 id="total">Your total is: $0.00</h3>
         </form>
     </main>
 
   <aside>
-    <table>
+    <table id="order_table">
         <thead>
             <tr>
                 <th>#</th>
@@ -109,16 +109,16 @@ Date  : 11/15/19
         <tfoot id="tablefoot">
             <tr>
                 <td colspan="3">
-                    <input type="button" class="button" name="order" value="Place Order">
+                    <input type="button" class="button" value="Place Order">
                 </td>
             </tr>
         </tfoot>
         <tbody id="tablebody">
         </tbody>
     </table>
-    <form method="post">
-        <input type="number" placeholder="0" />
-        <input type="button" onclick="genRows" value="Add Rows"/>
+    <form id="create_rows" method="post">
+        <input type="number" id="add_rows" placeholder="0" />
+        <input type="button" class="button" onclick="showOrderTable(); generateRows();" value="Add Rows"/>
     </form>
   </aside>
 
