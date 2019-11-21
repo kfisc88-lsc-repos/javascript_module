@@ -71,6 +71,20 @@ header h1 a {
 }
 
 
+/* Home Page Visit Section */
+
+#home_heading {
+    margin-bottom: 5px;
+}
+
+#home_image {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 5px groove #199696;
+}
+
+
 /* Navigation Styles */
 
 .horizontal {
