@@ -1,8 +1,8 @@
 "use strict";
 
 /*
-Author: Kelley Fischer
-File: scripts.js
+    Author: Kelley Fischer
+    File: scripts.js
 
 
 */
@@ -12,7 +12,7 @@ File: scripts.js
 function processOrder() {
     /* Initialize variables for list of IDs, cost, and i*/
     var cost = 0.00;
-    var ordered = ["burger", "dblburger", "chicken", "vegburger", "fish"]
+    var ordered = ["burger", "dblburger", "chicken", "vegburger", "fish"];
     var i;
 
     /* Iterates through each item of ordered, adding checked items to cost */
@@ -67,4 +67,13 @@ function generateRows() {
 
     /* Returns the table rows to the document */
     document.getElementById("tablebody").innerHTML = table_rows;
+}
+
+/* Changes the image displayed on mouse over */
+function changeImage() {
+    document.getElementById("home_image").src = "assets/littlefork2.jpg";
+}
+
+function changeImageBack() {
+    document.getElementById("home_image").src = "assets/littlefork1.jpg";
 }
